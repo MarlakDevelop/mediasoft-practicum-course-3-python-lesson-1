@@ -20,8 +20,8 @@ def problem_3(strings: list[str]) -> list[str]:
         return []
     first_string = strings[0]
     letters = []
-    new_strings = []
     for char in first_string:
+        new_strings = []
         for string in strings:
             if char in string:
                 new_strings.append(string.replace(char, '', 1))
